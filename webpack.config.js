@@ -13,7 +13,9 @@ module.exports = {
   output: {
     filename: './js/bundle.js'
   },
-  devtool: "source-map", // Source maps для удобства отладки
+
+  // Source maps для удобства отладки
+  devtool: "source-map",
 
   module: {
     rules: [
