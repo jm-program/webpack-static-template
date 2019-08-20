@@ -39,6 +39,7 @@ module.exports = {
           MiniCssExtractPlugin.loader, // Extract css to separate file
           'css-loader', // translates CSS into CommonJS
           'sass-loader', // compiles Sass to CSS, using Node Sass by default
+          "postcss-loader" // parse CSS and add vendor prefixes to CSS rules
         ],
       },
 
@@ -69,9 +70,6 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'style.css',
     }),
-
-    // Подключаем автогенерацию вендорных префиксов
-    require('autoprefixer'),
 
     // Копируем картинки
     new CopyWebpackPlugin([
