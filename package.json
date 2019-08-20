@@ -24,6 +24,11 @@
     "webpack-cli": "3.3.7",
     "webpack-dev-server": "3.8.0"
   },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
   "scripts": {
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
