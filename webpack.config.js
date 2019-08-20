@@ -70,9 +70,6 @@ module.exports = {
       filename: 'style.css',
     }),
 
-    // Подключаем автогенерацию вендорных префиксов
-    require('autoprefixer'),
-
     // Копируем картинки
     new CopyWebpackPlugin([
       {
