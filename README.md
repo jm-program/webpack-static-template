@@ -7,29 +7,38 @@
 - Autoprefixer
 - Sourcemaps
 
-## Requirements
+## Требования
 - [Node](https://nodejs.org/)
 
-## Usage
-##### Clone this repository
+## Использование
+##### Клонировать репозиторий, удалить историю
 ```
 git clone https://github.com/alex-karo/webpack-static-template PROJECT-NAME
 cd PROJECT-NAME
+rm -fr .git
 ```
-##### Install npm 
+##### Установить npm зависимости
 ```
 npm install
 ```
-##### Start
+##### Разработка
 
-To start the development server
+Для запуска веб-сервера с лайврелоадом
 ```
 npm start
 ```
-To build for production
+Для создания билда
 ```
 npm run build
 ```
 
+## Загрузка на Github Pages
 
-Based on [this article](https://hackernoon.com/lets-start-with-webpack-4-91a0f1dba02e)
+Ваш репозиторий должен быть связан с github репозиторием, после этого выполняем
+```
+npm run predeploy
+npm run deploy
+```
+
+
+Основано на [этой статье](https://hackernoon.com/lets-start-with-webpack-4-91a0f1dba02e)
