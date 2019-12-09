@@ -30,9 +30,10 @@
     }
   },
   "browserslist": [
-    "> 1%",
-    "last 5 versions",
-    "not ie <= 8"
+    "last 2 versions",
+    "Firefox ESR",
+    "not OperaMini All",
+    "not dead",
   ],
   "scripts": {
     "dev": "webpack --mode development",
