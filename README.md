@@ -36,7 +36,6 @@ npm run build
 
 Ваш репозиторий должен быть связан с github репозиторием, после этого выполняем
 ```
-npm run predeploy
 npm run deploy
 ```
 
