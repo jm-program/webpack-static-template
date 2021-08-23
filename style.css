@@ -616,9 +616,9 @@ button.swiper-pagination-bullet {
   background: #f8f8f8;
   font-family: TT Lakes; }
 
-.body > .header,
-.body > .main,
-.body > .footer {
+.header,
+.main,
+.footer {
   max-width: 1366px;
   margin-left: auto; }
 
@@ -881,6 +881,10 @@ button.swiper-pagination-bullet {
     text-align: right; } }
 
 @media (min-width: 1120px) {
+  .header,
+  .main,
+  .footer {
+    padding-left: 320px; }
   .main__topbar {
     padding-top: 42px; }
   .main__slide-menu {
@@ -1041,12 +1045,6 @@ button.swiper-pagination-bullet {
 @media (min-width: 1120px) {
   .sidebar {
     transform: translateX(0); }
-  .header {
-    margin-left: 320px; }
-  .main {
-    margin-left: 320px; }
-  .footer {
-    margin-left: 320px; }
   .sidebar__button-close {
     display: none; }
   .overlay-right-menu::after {
