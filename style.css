@@ -793,7 +793,7 @@ button.swiper-pagination-bullet {
   flex-grow: 1;
   flex-basis: 360px; }
 
-.footer {
+.footer__box {
   width: auto;
   border-top: 1px solid #d9fff5;
   padding: 16px;
