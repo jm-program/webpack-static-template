@@ -6,7 +6,7 @@
     <title>Document</title>
   <link href="style.css" rel="stylesheet"></head>
 
-  <body>
+  <body class="body">
     <header class="header">
       <div class="header__left">
         <button class="header__icon-menu button">
@@ -39,153 +39,153 @@
         </button>
       </div>
     </header>
-    <aside class="sidebar">
-      <div class="sidebar__header">
-        <div class="sidebar__header-left">
-          <button class="sidebar__button-close button">
-            <img class="button__icon" src="./img/button/icon/sidebar-close-menu.svg" alt="close-menu">
-          </button>
-          <img class="logo" src="./img/logo/Group.svg" alt="logo">
-        </div>
-        <div class="sidebar__header__right">
-          <button class="sidebar__button-search button">
-            <img class="button__icon" src="./img/button/icon/sidebar-search.svg" alt="search">
-          </button>
-        </div>
-      </div>
-
-      <div class="sidebar__main">
-        <nav class="sidebar__nav">
-          <ul class="sidebar__menu">
-            <li class="sidebar__menu-item">
-              <label class="sidebar__menu-box">
-                <input type="radio" class="button sidebar__menu-button" name="sidebar__menu-button" value="Ремонт техники" checked="checked">
-                <span class="sidebar__menu-text"> Ремонт техники </span>
-              </label>
-            </li>
-            <li class="sidebar__menu-item">
-              <label class="sidebar__menu-box">
-                <input type="radio" class="button sidebar__menu-button" name="sidebar__menu-button" value="Услуги и сервисы">
-                <span class="sidebar__menu-text"> Услуги и сервисы </span>
-              </label>
-            </li>
-            <li class="sidebar__menu-item">
-              <label class="sidebar__menu-box">
-                <input type="radio" class="button sidebar__menu-button" name="sidebar__menu-button" value="Корпоративным клиентам">
-                <span class="sidebar__menu-text"> Корпоративным клиентам </span>
-              </label>
-            </li>
-            <li class="sidebar__menu-item">
-              <label class="sidebar__menu-box">
-                <input type="radio" class="button sidebar__menu-button" name="sidebar__menu-button" value="Продавцам техники">
-                <span class="sidebar__menu-text"> Продавцам техники </span>
-              </label>
-            </li>
-            <li class="sidebar__menu-item">
-              <label class="sidebar__menu-box">
-                <input type="radio" class="button sidebar__menu-button" name="sidebar__menu-button" value="Партнерам">
-                <span class="sidebar__menu-text"> Партнерам </span>
-              </label>
-            </li>
-            <li class="sidebar__menu-item">
-              <label class="sidebar__menu-box">
-                <input type="radio" class="button sidebar__menu-button" name="sidebar__menu-button" value="Производителям">
-                <span class="sidebar__menu-text"> Производителям </span>
-              </label>
-            </li>
-            <li class="sidebar__menu-item">
-              <label class="sidebar__menu-box">
-                <input type="radio" class="button sidebar__menu-button" name="sidebar__menu-button" value="Наши сервисные центры">
-                <span class="sidebar__menu-text"> Наши сервисные центры </span>
-              </label>
-            </li>
-            <li class="sidebar__menu-item">
-              <label class="sidebar__menu-box">
-                <input type="radio" class="button sidebar__menu-button" name="sidebar__menu-button" value="Контакты">
-                <span class="sidebar__menu-text"> Контакты </span>
-              </label>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="sidebar__footer">
-        <div class="contacts">
-          <div class="contacts__buttons">
-            <button class="contacts__button-phone button">
-              <img class="button__icon" src="./img/button/icon/sidebar-phone.svg" alt="phone">
-            </button>
-            <button class="contacts__button-chat button">
-              <img class="button__icon" src="./img/button/icon/sidebar-chat.svg" alt="chat">
-            </button>
-            <button class="contacts__button-profile button">
-              <img class="button__icon" src="./img/button/icon/sidebar-profile.svg" alt="profile">
-            </button>
-          </div>
-          <div class="contacts__email">
-            <a href="" class="contacts__link">mail@cps.com</a>
-          </div>
-          <div class="contacts__phone">
-            <a href="" class="contacts__link">8 800 890 8900</a>
-          </div>
-          <div class="lang">
-            <label class="lang__box">
-              <input type="radio" class="lang__button button" name="lang__button" value="RU" checked="checked">
-              <span class="lang__text"> RU </span>
-            </label>
-            <label class="lang__box">
-              <input type="radio" class="lang__button button" name="lang__button" value="EN">
-              <span class="lang__text"> EN </span>
-            </label>
-            <label class="lang__box">
-              <input type="radio" class="lang__button button" name="lang__button" value="CH">
-              <span class="lang__text"> CH </span>
-            </label>
-          </div>
-        </div>
-      </div>
-    </aside>
-    <aside class="feedback">
-      <button class="feedback__button-close button">
-        <img src="./img/button/icon/sidebar-close-menu.svg" alt="close-menu" class="button__icon">
-      </button>
-      <div class="feedback__title">Обратная связь</div>
-      <form action="" class="feedback__form">
-        <input type="text" placeholder="Имя" class="feedback__input-name">
-        <input type="tel" placeholder="Телефон" class="feedback__input-phone">
-        <input type="email" placeholder="Электронная почта" class="feedback__input-email">
-        <textarea placeholder="Сообщение" rows="5" class="feedback__input-message"></textarea>
-        <p class="privacypolicy">
-          Нажимая “отправить”, вы даете согласие на
-          <span class="privacypolicy__select">обработку персональных данных</span>
-          и соглашаетесь с нашей
-          <span class="privacypolicy__select">политикой конфиденциальности</span>
-        </p>
-        <button type="submit" class="feedback__input-send button">
-          отправить
-          <img class="button__icon" src="./img/pricebar/pricebar__button/order.svg" alt="go">
-        </button>
-      </form>
-    </aside>
-    <aside class="requestcall">
-      <button class="requestcall__button-close button">
-        <img src="./img/button/icon/sidebar-close-menu.svg" alt="close-menu" class="button__icon">
-      </button>
-      <div class="requestcall__title">Заказать звонок</div>
-      <form action="" class="requestcall__form">
-        <input type="tel" placeholder="Телефон" class="requestcall__input-phone">
-        <p class="privacypolicy">
-          Нажимая “отправить”, вы даете согласие на
-          <span class="privacypolicy__select">обработку персональных данных</span>
-          и соглашаетесь с нашей
-          <span class="privacypolicy__select">политикой конфиденциальности</span>
-        </p>
-        <button type="submit" class="requestcall__input-send button">
-          отправить
-          <img class="button__icon" src="./img/pricebar/pricebar__button/order.svg" alt="go">
-        </button>
-      </form>
-    </aside>
     <main class="main">
+      <aside class="sidebar">
+        <div class="sidebar__header">
+          <div class="sidebar__header-left">
+            <button class="sidebar__button-close button">
+              <img class="button__icon" src="./img/button/icon/sidebar-close-menu.svg" alt="close-menu">
+            </button>
+            <img class="logo" src="./img/logo/Group.svg" alt="logo">
+          </div>
+          <div class="sidebar__header__right">
+            <button class="sidebar__button-search button">
+              <img class="button__icon" src="./img/button/icon/sidebar-search.svg" alt="search">
+            </button>
+          </div>
+        </div>
+  
+        <div class="sidebar__main">
+          <nav class="sidebar__nav">
+            <ul class="sidebar__menu">
+              <li class="sidebar__menu-item">
+                <label class="sidebar__menu-box">
+                  <input type="radio" class="button sidebar__menu-button" name="sidebar__menu-button" value="Ремонт техники" checked="checked">
+                  <span class="sidebar__menu-text"> Ремонт техники </span>
+                </label>
+              </li>
+              <li class="sidebar__menu-item">
+                <label class="sidebar__menu-box">
+                  <input type="radio" class="button sidebar__menu-button" name="sidebar__menu-button" value="Услуги и сервисы">
+                  <span class="sidebar__menu-text"> Услуги и сервисы </span>
+                </label>
+              </li>
+              <li class="sidebar__menu-item">
+                <label class="sidebar__menu-box">
+                  <input type="radio" class="button sidebar__menu-button" name="sidebar__menu-button" value="Корпоративным клиентам">
+                  <span class="sidebar__menu-text"> Корпоративным клиентам </span>
+                </label>
+              </li>
+              <li class="sidebar__menu-item">
+                <label class="sidebar__menu-box">
+                  <input type="radio" class="button sidebar__menu-button" name="sidebar__menu-button" value="Продавцам техники">
+                  <span class="sidebar__menu-text"> Продавцам техники </span>
+                </label>
+              </li>
+              <li class="sidebar__menu-item">
+                <label class="sidebar__menu-box">
+                  <input type="radio" class="button sidebar__menu-button" name="sidebar__menu-button" value="Партнерам">
+                  <span class="sidebar__menu-text"> Партнерам </span>
+                </label>
+              </li>
+              <li class="sidebar__menu-item">
+                <label class="sidebar__menu-box">
+                  <input type="radio" class="button sidebar__menu-button" name="sidebar__menu-button" value="Производителям">
+                  <span class="sidebar__menu-text"> Производителям </span>
+                </label>
+              </li>
+              <li class="sidebar__menu-item">
+                <label class="sidebar__menu-box">
+                  <input type="radio" class="button sidebar__menu-button" name="sidebar__menu-button" value="Наши сервисные центры">
+                  <span class="sidebar__menu-text"> Наши сервисные центры </span>
+                </label>
+              </li>
+              <li class="sidebar__menu-item">
+                <label class="sidebar__menu-box">
+                  <input type="radio" class="button sidebar__menu-button" name="sidebar__menu-button" value="Контакты">
+                  <span class="sidebar__menu-text"> Контакты </span>
+                </label>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="sidebar__footer">
+          <div class="contacts">
+            <div class="contacts__buttons">
+              <button class="contacts__button-phone button">
+                <img class="button__icon" src="./img/button/icon/sidebar-phone.svg" alt="phone">
+              </button>
+              <button class="contacts__button-chat button">
+                <img class="button__icon" src="./img/button/icon/sidebar-chat.svg" alt="chat">
+              </button>
+              <button class="contacts__button-profile button">
+                <img class="button__icon" src="./img/button/icon/sidebar-profile.svg" alt="profile">
+              </button>
+            </div>
+            <div class="contacts__email">
+              <a href="" class="contacts__link">mail@cps.com</a>
+            </div>
+            <div class="contacts__phone">
+              <a href="" class="contacts__link">8 800 890 8900</a>
+            </div>
+            <div class="lang">
+              <label class="lang__box">
+                <input type="radio" class="lang__button button" name="lang__button" value="RU" checked="checked">
+                <span class="lang__text"> RU </span>
+              </label>
+              <label class="lang__box">
+                <input type="radio" class="lang__button button" name="lang__button" value="EN">
+                <span class="lang__text"> EN </span>
+              </label>
+              <label class="lang__box">
+                <input type="radio" class="lang__button button" name="lang__button" value="CH">
+                <span class="lang__text"> CH </span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <aside class="feedback">
+        <button class="feedback__button-close button">
+          <img src="./img/button/icon/sidebar-close-menu.svg" alt="close-menu" class="button__icon">
+        </button>
+        <div class="feedback__title">Обратная связь</div>
+        <form action="" class="feedback__form">
+          <input type="text" placeholder="Имя" class="feedback__input-name">
+          <input type="tel" placeholder="Телефон" class="feedback__input-phone">
+          <input type="email" placeholder="Электронная почта" class="feedback__input-email">
+          <textarea placeholder="Сообщение" rows="5" class="feedback__input-message"></textarea>
+          <p class="privacypolicy">
+            Нажимая “отправить”, вы даете согласие на
+            <span class="privacypolicy__select">обработку персональных данных</span>
+            и соглашаетесь с нашей
+            <span class="privacypolicy__select">политикой конфиденциальности</span>
+          </p>
+          <button type="submit" class="feedback__input-send button">
+            отправить
+            <img class="button__icon" src="./img/pricebar/pricebar__button/order.svg" alt="go">
+          </button>
+        </form>
+      </aside>
+      <aside class="requestcall">
+        <button class="requestcall__button-close button">
+          <img src="./img/button/icon/sidebar-close-menu.svg" alt="close-menu" class="button__icon">
+        </button>
+        <div class="requestcall__title">Заказать звонок</div>
+        <form action="" class="requestcall__form">
+          <input type="tel" placeholder="Телефон" class="requestcall__input-phone">
+          <p class="privacypolicy">
+            Нажимая “отправить”, вы даете согласие на
+            <span class="privacypolicy__select">обработку персональных данных</span>
+            и соглашаетесь с нашей
+            <span class="privacypolicy__select">политикой конфиденциальности</span>
+          </p>
+          <button type="submit" class="requestcall__input-send button">
+            отправить
+            <img class="button__icon" src="./img/pricebar/pricebar__button/order.svg" alt="go">
+          </button>
+        </form>
+      </aside>
       <div class="main__topbar">
         <div class="main__title">
           <h1 class="main__title-text">Услуги и сервисы</h1>
@@ -204,38 +204,38 @@
       <nav class="main__nav">
         <ul class="main__slide-menu">
           <li class="main__slide-item">
-            <label class="slide__box">
-              <input type="radio" class="button slide__button" name="slide__button" value="Ремонтируемые бренды">
+            <label class="slide__box button">
+              <input type="radio" class="slide__button" name="slide__button" value="Ремонтируемые бренды">
               <div class="slide__text">Ремонтируемые бренды</div>
             </label>
           </li>
           <li class="main__slide-item">
-            <label class="slide__box">
-              <input type="radio" class="button slide__button" name="slide__button" value="Ремонтируемые устройства">
+            <label class="slide__box button">
+              <input type="radio" class="slide__button" name="slide__button" value="Ремонтируемые устройства">
               <div class="slide__text">Ремонтируемые устройства</div>
             </label>
           </li>
           <li class="main__slide-item">
-            <label class="slide__box">
-              <input type="radio" class="button slide__button" name="slide__button" value="Цены на услуги">
+            <label class="slide__box button">
+              <input type="radio" class="slide__button" name="slide__button" value="Цены на услуги">
               <div class="slide__text">Цены на услуги</div>
             </label>
           </li>
           <li class="main__slide-item">
-            <label class="slide__box">
-              <input type="radio" class="button slide__button" name="slide__button" value="Адреса сервисных центров">
+            <label class="slide__box button">
+              <input type="radio" class="slide__button" name="slide__button" value="Адреса сервисных центров">
               <div class="slide__text">Адреса сервисных центров</div>
             </label>
           </li>
           <li class="main__slide-item">
-            <label class="slide__box">
-              <input type="radio" class="button slide__button" name="slide__button" value="Специальные цены">
+            <label class="slide__box button">
+              <input type="radio" class="slide__button" name="slide__button" value="Специальные цены">
               <div class="slide__text">Специальные цены</div>
             </label>
           </li>
           <li class="main__slide-item">
-            <label class="slide__box">
-              <input type="radio" class="button slide__button" name="slide__button" value="Отзывы">
+            <label class="slide__box button">
+              <input type="radio" class="slide__button" name="slide__button" value="Отзывы">
               <div class="slide__text">Отзывы</div>
             </label>
           </li>
