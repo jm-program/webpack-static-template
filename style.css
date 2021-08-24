@@ -1147,12 +1147,13 @@ button.swiper-pagination-bullet {
     background: linear-gradient(90deg, #f8f8f8 1.39%, #ffffff 100%); }
   .brendswiper .brendswiper__wrapper {
     margin-left: 16px; }
-  .brendswiper .brendswiper__pagination {
-    position: relative;
-    -webkit-filter: grayscale(100%);
-            filter: grayscale(100%);
-    opacity: 0.5;
-    margin-top: 20px; }
+
+.brendswiper__pagination {
+  position: relative;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  opacity: 0.5;
+  margin-top: 20px; }
 
 .brendswiper::after {
   z-index: 100;
@@ -1352,7 +1353,7 @@ button.swiper-pagination-bullet {
     grid-template-rows: auto auto auto;
     width: 260px;
     gap: 16px;
-    max-height: 200px;
+    height: 200px;
     padding: 16px;
     background: #ffffff;
     border-radius: 6px; } }
