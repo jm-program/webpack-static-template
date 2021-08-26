@@ -205,37 +205,37 @@
         <ul class="main__slide-menu">
           <li class="main__slide-item">
             <label class="slide__box button">
-              <input type="radio" class="slide__button" name="slide__button" value="Ремонтируемые бренды">
+              <input type="radio" class="slide__button" name="slide__button" id="description-brends" value="Ремонтируемые бренды">
               <div class="slide__text">Ремонтируемые бренды</div>
             </label>
           </li>
           <li class="main__slide-item">
             <label class="slide__box button">
-              <input type="radio" class="slide__button" name="slide__button" value="Ремонтируемые устройства">
+              <input type="radio" class="slide__button" name="slide__button" id="description-devices" value="Ремонтируемые устройства">
               <div class="slide__text">Ремонтируемые устройства</div>
             </label>
           </li>
           <li class="main__slide-item">
             <label class="slide__box button">
-              <input type="radio" class="slide__button" name="slide__button" value="Цены на услуги">
+              <input type="radio" class="slide__button" name="slide__button" id="description-price" value="Цены на услуги">
               <div class="slide__text">Цены на услуги</div>
             </label>
           </li>
           <li class="main__slide-item">
             <label class="slide__box button">
-              <input type="radio" class="slide__button" name="slide__button" value="Адреса сервисных центров">
+              <input type="radio" class="slide__button" name="slide__button" id="description-addresses" value="Адреса сервисных центров">
               <div class="slide__text">Адреса сервисных центров</div>
             </label>
           </li>
           <li class="main__slide-item">
             <label class="slide__box button">
-              <input type="radio" class="slide__button" name="slide__button" value="Специальные цены">
+              <input type="radio" class="slide__button" name="slide__button" id="description-special" value="Специальные цены">
               <div class="slide__text">Специальные цены</div>
             </label>
           </li>
           <li class="main__slide-item">
             <label class="slide__box button">
-              <input type="radio" class="slide__button" name="slide__button" value="Отзывы">
+              <input type="radio" class="slide__button" name="slide__button" id="description-review" value="Отзывы">
               <div class="slide__text">Отзывы</div>
             </label>
           </li>
@@ -244,7 +244,8 @@
 
       <div class="main__description">
         <section class="main__description-info">
-          <p class="main__description-text">
+          <div class="main__description-text">
+            <p class="main__description-base" id="">
             Мы являемся авторизованным сервисным центром по ремонту техники
             Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
             официальной гарантией производителя.
@@ -254,7 +255,9 @@
             партнера, что подтверждает большое количество постоянных клиентов.
             Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
             очередь, советуют нас родным и близким.
-          </p>
+            </p>
+          </div>
+
           <button class="showmore button">
             <img class="showmore-ic button__icon" src="./img/showmore/expand.svg">
             <div class="showmore-text">Читать далее</div>

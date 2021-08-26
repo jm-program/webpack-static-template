@@ -870,6 +870,14 @@ button.swiper-pagination-bullet {
     max-height: -webkit-fit-content;
     max-height: -moz-fit-content;
     max-height: fit-content; }
+    .main .main__description-info .full-screen {
+      height: -webkit-min-content;
+      height: -moz-min-content;
+      height: min-content;
+      max-height: -webkit-fit-content;
+      max-height: -moz-fit-content;
+      max-height: fit-content;
+      overflow-y: visible; }
   .main .main__description-text {
     padding: 0 16px;
     font-size: 14px;
@@ -932,6 +940,28 @@ button.swiper-pagination-bullet {
     color: #7e7e82;
     mix-blend-mode: normal;
     opacity: 0.72; }
+
+.showmore {
+  margin-left: 24px;
+  display: flex;
+  margin-bottom: auto; }
+  .showmore .showmore-text {
+    padding-left: 8px;
+    font-family: TT Lakes;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1b1c21; }
+
+.active .button__icon {
+  transform: rotate(180deg);
+  transition: all 0.3s ease-out; }
+
+.full-screen {
+  height: auto;
+  max-height: auto;
+  overflow-y: visible; }
 
 .sidebar {
   z-index: 10;
@@ -1101,33 +1131,6 @@ button.swiper-pagination-bullet {
     height: auto;
     max-height: 148px;
     overflow-y: hidden; }
-
-.showmore {
-  margin-left: 24px;
-  display: flex;
-  margin-bottom: auto; }
-
-.showmore-text {
-  padding-left: 8px;
-  font-family: TT Lakes;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: -0.2px;
-  color: #1b1c21; }
-
-.active .button__icon {
-  transform: rotate(180deg);
-  transition: all 0.3s ease-out; }
-
-.full-screen {
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  max-height: -webkit-fit-content;
-  max-height: -moz-fit-content;
-  max-height: fit-content;
-  overflow-y: visible; }
 
 .brendswiper {
   position: relative;
