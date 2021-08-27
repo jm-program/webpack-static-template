@@ -202,69 +202,75 @@
         </div>
       </div>
       <nav class="main__nav">
-        <ul class="main__slide-menu">
-          <li class="main__slide-item">
-            <label class="slide__box button">
-              <input type="radio" class="slide__button" name="slide__button" id="description-brends" value="Ремонтируемые бренды">
-              <div class="slide__text">Ремонтируемые бренды</div>
+        <input type="radio" class="main__nav-button" name="main__nav-button" id="tab-base" value="Ремонтируемые бренды" checked="checked">
+        <input type="radio" class="main__nav-button" name="main__nav-button" id="tab-brends" value="Ремонтируемые бренды">
+        <input type="radio" class="main__nav-button" name="main__nav-button" id="tab-devices" value="Ремонтируемые устройства">
+        <input type="radio" class="main__nav-button" name="main__nav-button" id="tab-price" value="Цены на услуги">
+        <input type="radio" class="main__nav-button" name="main__nav-button" id="tab-addresses" value="Адреса сервисных центров">
+        <input type="radio" class="main__nav-button" name="main__nav-button" id="tab-special" value="Специальные цены">
+        <input type="radio" class="main__nav-button" name="main__nav-button" id="tab-review" value="Отзывы">
+        <div class="main__slide-menu">
+            <label class="tab button" for="tab-brends" id="tab-nav-brends">
+              <div class="tab__text">Ремонтируемые бренды</div>
             </label>
-          </li>
-          <li class="main__slide-item">
-            <label class="slide__box button">
-              <input type="radio" class="slide__button" name="slide__button" id="description-devices" value="Ремонтируемые устройства">
-              <div class="slide__text">Ремонтируемые устройства</div>
+            <label class="tab button" for="tab-devices" id="tab-nav-devices">
+              <div class="tab__text">Ремонтируемые устройства</div>
             </label>
-          </li>
-          <li class="main__slide-item">
-            <label class="slide__box button">
-              <input type="radio" class="slide__button" name="slide__button" id="description-price" value="Цены на услуги">
-              <div class="slide__text">Цены на услуги</div>
+            <label class="tab button" for="tab-price" id="tab-nav-price">
+              <div class="tab__text">Цены на услуги</div>
             </label>
-          </li>
-          <li class="main__slide-item">
-            <label class="slide__box button">
-              <input type="radio" class="slide__button" name="slide__button" id="description-addresses" value="Адреса сервисных центров">
-              <div class="slide__text">Адреса сервисных центров</div>
+            <label class="tab button" for="tab-addresses" id="tab-nav-addresses">
+              <div class="tab__text">Адреса сервисных центров</div>
             </label>
-          </li>
-          <li class="main__slide-item">
-            <label class="slide__box button">
-              <input type="radio" class="slide__button" name="slide__button" id="description-special" value="Специальные цены">
-              <div class="slide__text">Специальные цены</div>
+            <label class="tab button" for="tab-special" id="tab-nav-special">
+              <div class="tab__text">Специальные цены</div>
             </label>
-          </li>
-          <li class="main__slide-item">
-            <label class="slide__box button">
-              <input type="radio" class="slide__button" name="slide__button" id="description-review" value="Отзывы">
-              <div class="slide__text">Отзывы</div>
+            <label class="tab button" for="tab-review" id="tab-nav-review">
+              <div class="tab__text">Отзывы</div>
             </label>
-          </li>
-        </ul>
+        </div>
+        <div class="main__description">
+            <section class="main__description-box">
+              <div class="main__description-info">
+                <p class="main__description-text" id="tab-text-base">
+                Мы являемся авторизованным сервисным центром по ремонту техники
+                Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+                официальной гарантией производителя.
+                <br>
+                <br>
+                Мы успешно работаем с 1992 года и заслужили репутацию надежного
+                партнера, что подтверждает большое количество постоянных клиентов.
+                Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+                очередь, советуют нас родным и близким.
+                </p>
+                <p class="main__description-text" id="tab-text-brends">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis.
+                </p>
+                <p class="main__description-text" id="tab-text-devices">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                </p>
+                <p class="main__description-text" id="tab-text-price">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. 
+                </p>
+                <p class="main__description-text" id="tab-text-addresses">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. 
+                </p>
+                <p class="main__description-text" id="tab-text-special">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. 
+                </p>
+                <p class="main__description-text" id="tab-text-review">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. 
+                </p>
+              </div>
+              <button class="showmore button">
+                <img class="showmore-ic button__icon" src="./img/showmore/expand.svg">
+                <div class="showmore-text">Читать далее</div>
+              </button>
+            </section>
+            <img class="main__description-img" src="./img/main/desc_picture.jpg" alt="description picture">
+        </div>
       </nav>
 
-      <div class="main__description">
-        <section class="main__description-info">
-          <div class="main__description-text">
-            <p class="main__description-base" id="">
-            Мы являемся авторизованным сервисным центром по ремонту техники
-            Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
-            официальной гарантией производителя.
-            <br>
-            <br>
-            Мы успешно работаем с 1992 года и заслужили репутацию надежного
-            партнера, что подтверждает большое количество постоянных клиентов.
-            Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
-            очередь, советуют нас родным и близким.
-            </p>
-          </div>
-
-          <button class="showmore button">
-            <img class="showmore-ic button__icon" src="./img/showmore/expand.svg">
-            <div class="showmore-text">Читать далее</div>
-          </button>
-        </section>
-        <img class="main__description-img" src="./img/main/desc_picture.jpg" alt="description picture">
-      </div>
 
       <div class="brendswiper swiper-container mySwiper">
         <div class="brendswiper__title swiper-title">

@@ -812,9 +812,7 @@ button.swiper-pagination-bullet {
     display: flex;
     overflow-x: scroll;
     margin: 0;
-    padding: 0;
-    white-space: nowrap;
-    height: 40px; }
+    white-space: nowrap; }
     @media (min-width: 1120px) {
       .main .main__slide-menu {
         overflow: normal;
@@ -828,16 +826,7 @@ button.swiper-pagination-bullet {
     width: 24px;
     height: 40px;
     background: linear-gradient(270deg, #f8f8f8 16.84%, rgba(248, 248, 248, 0.0001) 100%); }
-  .main .main__slide-item {
-    display: block;
-    width: auto;
-    height: 40px; }
-  .main .slide__box {
-    position: relative;
-    display: block;
-    width: auto;
-    height: 40px; }
-  .main .slide__button {
+  .main .main__nav-button {
     z-index: 0;
     position: absolute;
     -webkit-appearance: none;
@@ -845,32 +834,19 @@ button.swiper-pagination-bullet {
          appearance: none;
     width: 100%;
     height: 40px; }
-  .main .slide__button:checked {
-    background: #ffffff;
-    border: 2px solid #b8ffec;
-    border-radius: 6px; }
-  .main .slide__text {
-    position: relative;
-    z-index: 1;
-    padding: 8px 16px;
-    white-space: nowrap;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    color: #7e7e82; }
   .main .main__description {
+    margin-top: 32px;
     display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 20px; }
-  .main .main__description-info {
+    flex-wrap: wrap; }
+  .main .main__description-box {
     align-self: start;
     min-width: 320px;
     flex-grow: 1;
-    flex-basis: 360px;
+    flex-basis: 384px;
     max-height: -webkit-fit-content;
     max-height: -moz-fit-content;
     max-height: fit-content; }
-    .main .main__description-info .full-screen {
+    .main .main__description-box .full-screen {
       height: -webkit-min-content;
       height: -moz-min-content;
       height: min-content;
@@ -878,19 +854,19 @@ button.swiper-pagination-bullet {
       max-height: -moz-fit-content;
       max-height: fit-content;
       overflow-y: visible; }
-  .main .main__description-text {
+  .main .main__description-info {
     padding: 0 16px;
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 0.2px;
     color: #1b1c21; }
     @media (min-width: 320px) {
-      .main .main__description-text {
+      .main .main__description-info {
         height: auto;
         max-height: 90px;
         overflow-y: hidden; } }
     @media (min-width: 768px) {
-      .main .main__description-text {
+      .main .main__description-info {
         height: auto;
         max-height: -webkit-fit-content;
         max-height: -moz-fit-content;
@@ -906,6 +882,8 @@ button.swiper-pagination-bullet {
     @media (min-width: 768px) {
       .main .main__description-img {
         margin: 0 25px; } }
+  .main .main__description-text {
+    display: none; }
   @media (min-width: 320px) {
     .main .main__buttons {
       display: none; } }
@@ -913,6 +891,67 @@ button.swiper-pagination-bullet {
     .main .main__buttons {
       display: flex;
       align-items: center; } }
+  .main .tab {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 40px;
+    border-radius: 6px; }
+  .main #tab-brends:checked ~ .main__slide-menu #tab-nav-brends,
+  .main #tab-devices:checked ~ .main__slide-menu #tab-nav-devices,
+  .main #tab-price:checked ~ .main__slide-menu #tab-nav-price,
+  .main #tab-addresses:checked ~ .main__slide-menu #tab-nav-addresses,
+  .main #tab-special:checked ~ .main__slide-menu #tab-nav-special,
+  .main #tab-review:checked ~ .main__slide-menu #tab-nav-review {
+    background: #ffffff;
+    border: 2px solid #b8ffec; }
+  .main #tab-base:checked
+~ .main__description
+.main__description-box
+.main__description-info
+#tab-text-base,
+  .main #tab-brends:checked
+~ .main__description
+.main__description-box
+.main__description-info
+#tab-text-brends,
+  .main #tab-devices:checked
+~ .main__description
+.main__description-box
+.main__description-info
+#tab-text-devices,
+  .main #tab-price:checked
+~ .main__description
+.main__description-box
+.main__description-info
+#tab-text-price,
+  .main #tab-addresses:checked
+~ .main__description
+.main__description-box
+.main__description-info
+#tab-text-addresses,
+  .main #tab-special:checked
+~ .main__description
+.main__description-box
+.main__description-info
+#tab-text-special,
+  .main #tab-review:checked
+~ .main__description
+.main__description-box
+.main__description-info
+#tab-text-review {
+    display: inline; }
+  .main .tab__text {
+    position: relative;
+    z-index: 1;
+    padding: 8px 16px;
+    white-space: nowrap;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #7e7e82; }
 
 .footer__box {
   width: auto;
