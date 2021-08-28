@@ -646,17 +646,14 @@ button.swiper-pagination-bullet {
   opacity: 50%;
   cursor: pointer; }
 
-.header,
-.main,
-.footer {
-  max-width: 1280px;
-  margin-left: auto;
-  margin-right: auto; }
-  @media (min-width: 1120px) {
-    .header,
-    .main,
-    .footer {
-      padding-left: 320px; } }
+@media (min-width: 1120px) {
+  .header,
+  .main,
+  .footer {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 320px; } }
 
 .button {
   transition-duration: 300ms;
@@ -806,10 +803,9 @@ button.swiper-pagination-bullet {
   .main .main__icon-name {
     padding-right: 8px;
     font-weight: 500; }
-  .main .main__nav {
-    padding: 32px 0 32px 16px; }
   .main .main__slide-menu {
     display: flex;
+    padding: 32px 0 32px 16px;
     overflow-x: scroll;
     margin: 0;
     white-space: nowrap; }
@@ -831,9 +827,7 @@ button.swiper-pagination-bullet {
     position: absolute;
     -webkit-appearance: none;
     -moz-appearance: none;
-         appearance: none;
-    width: 100%;
-    height: 40px; }
+         appearance: none; }
   .main .main__description {
     margin-top: 32px;
     display: flex;
@@ -868,9 +862,7 @@ button.swiper-pagination-bullet {
     @media (min-width: 768px) {
       .main .main__description-info {
         height: auto;
-        max-height: -webkit-fit-content;
-        max-height: -moz-fit-content;
-        max-height: fit-content;
+        max-height: 160px;
         overflow: hidden;
         padding: 0 24px; } }
   .main .main__description-img {
@@ -997,11 +989,6 @@ button.swiper-pagination-bullet {
   transform: rotate(180deg);
   transition: all 0.3s ease-out; }
 
-.full-screen {
-  height: auto;
-  max-height: auto;
-  overflow-y: visible; }
-
 .sidebar {
   z-index: 10;
   transform: translateX(-320px);
@@ -1018,6 +1005,7 @@ button.swiper-pagination-bullet {
   font-weight: 500; }
   @media (min-width: 1120px) {
     .sidebar {
+      transform: translateX(-320px);
       left: auto; } }
   .sidebar .sidebar__header {
     display: flex;
@@ -1089,20 +1077,23 @@ button.swiper-pagination-bullet {
   background: #ffffff;
   opacity: 0;
   transition: all 0.3s ease-out; }
-  .overlay .overlay-left-menu {
-    visibility: visible;
-    opacity: 0.96; }
-  .overlay .overlay-right-menu {
-    z-index: 11;
-    visibility: visible;
-    opacity: 0.96; }
-  @media (min-width: 1120px) {
-    .overlay .overlay-right-menu::after {
-      position: absolute;
-      right: 473px;
-      top: 32px;
-      content: url(./static/sidebar-close-menu.svg);
-      cursor: pointer; } }
+
+.overlay-left-menu {
+  visibility: visible;
+  opacity: 0.96; }
+
+.overlay-right-menu {
+  z-index: 11;
+  visibility: visible;
+  opacity: 0.96; }
+
+@media (min-width: 1120px) {
+  .overlay-right-menu::after {
+    position: absolute;
+    right: 473px;
+    top: 32px;
+    content: url(./static/sidebar-close-menu.svg);
+    cursor: pointer; } }
 
 .contacts__buttons {
   display: flex;
@@ -1167,9 +1158,12 @@ button.swiper-pagination-bullet {
     grid-gap: 16px;
     justify-content: space-between;
     padding: 24px;
-    height: auto;
-    max-height: 148px;
+    height: 148px;
     overflow-y: hidden; }
+  .brendbar .full-screen {
+    height: auto;
+    max-height: auto;
+    overflow-y: visible; }
 
 .brendswiper {
   position: relative;
@@ -1219,6 +1213,11 @@ button.swiper-pagination-bullet {
   box-sizing: border-box;
   border-radius: 6px; }
 
+.full-screen {
+  height: auto;
+  max-height: auto;
+  overflow-y: visible; }
+
 .servicebar {
   width: auto;
   border-top: solid 1px #d9fff5;
@@ -1229,15 +1228,6 @@ button.swiper-pagination-bullet {
   @media (min-width: 768px) {
     .servicebar {
       display: block; } }
-  .servicebar .servicebar__box {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 240px);
-    grid-gap: 16px;
-    justify-content: space-between;
-    padding: 24px;
-    height: auto;
-    max-height: 148px;
-    overflow-y: hidden; }
   .servicebar .servicebar__title {
     padding: 16px 24px;
     font-size: 16px;
@@ -1246,6 +1236,18 @@ button.swiper-pagination-bullet {
     text-transform: uppercase;
     color: #7e7e82;
     background: linear-gradient(270deg, #ffffff 0%, #f8f8f8 98.61%); }
+  .servicebar .servicebar__box {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 240px);
+    grid-gap: 16px;
+    justify-content: space-between;
+    padding: 24px;
+    height: 148px;
+    overflow-y: hidden; }
+  .servicebar .full-screen {
+    height: auto;
+    max-height: auto;
+    overflow-y: visible; }
 
 .serviceswiper {
   position: relative;
@@ -1554,8 +1556,6 @@ button.swiper-pagination-bullet {
     .feedback {
       width: 440px;
       padding-top: 0; } }
-  .feedback ::-webkit-scrollbar {
-    display: none; }
   @media (min-width: 1120px) {
     .feedback .feedback__button-close {
       display: none; } }
@@ -1629,6 +1629,9 @@ button.swiper-pagination-bullet {
     letter-spacing: -0.2px;
     color: #b5b6bc; }
 
+.feedback::-webkit-scrollbar {
+  display: none; }
+
 .feedback-active {
   transform: translateX(0);
   box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2); }
@@ -1680,8 +1683,6 @@ button.swiper-pagination-bullet {
       display: none; } }
   .requestcall .requestcall__form {
     position: relative; }
-  .requestcall ::-webkit-scrollbar {
-    display: none; }
   .requestcall .requestcall__title {
     margin-top: 40px;
     font-size: 24px;
@@ -1745,6 +1746,9 @@ button.swiper-pagination-bullet {
     letter-spacing: -0.15px;
     text-transform: uppercase;
     color: #ffffff; }
+
+.requestcall::-webkit-scrollbar {
+  display: none; }
 
 .requestcall-active {
   transform: translateX(0);
