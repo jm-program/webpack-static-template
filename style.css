@@ -953,14 +953,8 @@ button.swiper-pagination-bullet {
   gap: 16px; }
   @media (min-width: 768px) {
     .footer__box {
-      grid-template-columns: 30% 30% 30%;
+      grid-template-columns: 30% auto 30%;
       justify-content: space-between; } }
-  @media (min-width: 768px) {
-    .footer__box .footer__developer {
-      text-align: left; } }
-  @media (min-width: 768px) {
-    .footer__box .footer__info {
-      text-align: right; } }
   .footer__box .footer__developer,
   .footer__box .footer__privacy-policy,
   .footer__box .footer__info {
@@ -970,6 +964,12 @@ button.swiper-pagination-bullet {
     color: #7e7e82;
     mix-blend-mode: normal;
     opacity: 0.72; }
+  @media (min-width: 768px) {
+    .footer__box .footer__developer {
+      text-align: left; } }
+  @media (min-width: 768px) {
+    .footer__box .footer__info {
+      text-align: right; } }
 
 .showmore {
   margin-left: 24px;
