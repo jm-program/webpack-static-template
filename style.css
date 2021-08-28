@@ -952,8 +952,7 @@ button.swiper-pagination-bullet {
   display: grid;
   gap: 16px; }
   @media (min-width: 768px) {
-    .footer__box .footer__box {
-      padding: 24px;
+    .footer__box {
       grid-template-columns: 30% 30% 30%;
       justify-content: space-between; } }
   @media (min-width: 768px) {
