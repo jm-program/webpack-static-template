@@ -1,4 +1,5 @@
 # Webpack Static Site Starter Kit
+
 ## Требования к проекту
 - [Node 14.18.3](https://nodejs.org/download/release/v14.18.3/)
 - [NVM/MacOC](https://tecadmin.net/install-nvm-macos-with-homebrew/)
@@ -18,6 +19,7 @@ cd block7
 ```
 rm -fr .git
 ```
+
 ## Проверка версии ноды
 ##### Должно вывести версию ноды 14.18.3
 ```
@@ -26,6 +28,7 @@ node -v
 
 ## Два метода установки зависимостей
 ##### Установка зависимостей через NPM
+
 ```
 npm install
 ```
@@ -66,3 +69,4 @@ yarn deploy
 ```
 
 Основано на [этой статье](https://hackernoon.com/lets-start-with-webpack-4-91a0f1dba02e)
+
