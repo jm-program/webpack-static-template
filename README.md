@@ -1,56 +1,68 @@
 # Webpack Static Site Starter Kit
-
-## Features
-- Babel
-- SCSS
-- Font loading
-- Autoprefixer
-- Sourcemaps
-
-## Требования
-- [Node](https://nodejs.org/)
+## Требования к проекту
+- [Node 14.18.3](https://nodejs.org/download/release/v14.18.3/)
 - [NVM/MacOC](https://tecadmin.net/install-nvm-macos-with-homebrew/)
-- [NVM/Windows](https://github.com/coreybutler/nvm-windows/releases)
+- [NVM/Windows](https://github.com/coreybutler/nvm-windows/releases) Если Windows то установка только от имени администратора
+- [Yarn](https://yarnpkg.com/)
 
 ## Использование
-##### Клонировать репозиторий, удалить историю
+##### Клонировать репозиторий
 ```
 git clone https://github.com/alex-karo/webpack-static-template block7
 ```
+##### В папке block7 перейти в папку проекта
 ```
 cd block7
 ```
+##### Удалить папку .git
 ```
 rm -fr .git
 ```
-#### Проверка версии ноды
+## Проверка версии ноды
+##### Должно вывести версию ноды 14.18.3
 ```
 node -v
 ```
-Если нода выше чем 15, то нужно сделать
-```
-nvm install 14.18.3
-```
-##### Установить npm зависимости
+
+## Два метода установки зависимостей
+##### Установка зависимостей через NPM
 ```
 npm install
 ```
-##### Разработка
+##### Установка зависимостей через Yarn
+```
+yarn
+```
 
-Для запуска веб-сервера с лайврелоадом
+## Два метода запуска приложения
+#### Для запуска веб-сервера с лайврелоадом через NPM
 ```
 npm run start
 ```
-Для создания билда
+#### Для создания билда через NPM
 ```
 npm run build
 ```
 
-## Загрузка на Github Pages
 
-Ваш репозиторий должен быть связан с github репозиторием, после этого выполняем
+#### Для запуска веб-сервера с лайврелоадом через Yarn
+```
+yarn start
+```
+#### Для создания билда через Yarn
+```
+yarn build
+```
+
+## Два метода загрузки на Github Pages
+**Ваш репозиторий должен быть связан с github репозиторием, после этого выполняем**
+#### Загрузка на Github Pages через NPM
 ```
 npm run deploy
+```
+#### Загрузка на Github Pages через Yarn
+```
+yarn deploy
 ```
 
 Основано на [этой статье](https://hackernoon.com/lets-start-with-webpack-4-91a0f1dba02e)
