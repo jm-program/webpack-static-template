@@ -2,10 +2,24 @@
   "name": "webpack-test",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "keywords": [],
-  "author": "",
   "license": "ISC",
+  "author": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "dev": "webpack --mode development",
+    "start": "webpack-dev-server --mode development --open",
+    "watch": "webpack --mode development --watch"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "Firefox ESR",
+    "not OperaMini All",
+    "not dead"
+  ],
   "devDependencies": {
     "@babel/core": "7.5.5",
     "@babel/preset-env": "7.5.5",
@@ -24,23 +38,14 @@
     "webpack-cli": "3.3.7",
     "webpack-dev-server": "^3.11.0"
   },
+  "engines": {
+    "node": "~14.18.3",
+    "npm": "~6.14.15"
+  },
+  "engineStrict": true,
   "postcss": {
     "plugins": {
       "autoprefixer": {}
     }
-  },
-  "browserslist": [
-    "last 2 versions",
-    "Firefox ESR",
-    "not OperaMini All",
-    "not dead"
-  ],
-  "scripts": {
-    "dev": "webpack --mode development",
-    "build": "webpack --mode production",
-    "watch": "webpack --mode development --watch",
-    "start": "webpack-dev-server --mode development --open",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
   }
 }
