@@ -1,0 +1,11 @@
+{
+   "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "eamodio.gitlens",
+    "esbenp.prettier-vscode",
+    "ecmel.vscode-html-css",
+    "sainoba.px-to-rem",
+    "streetsidesoftware.code-spell-checker",
+    "streetsidesoftware.code-spell-checker-russian",
+   ]
+}
