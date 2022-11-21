@@ -1,10 +1,16 @@
 {
-  "name": "webpack-test",
+  "name": "web-last-block",
   "version": "1.0.0",
   "description": "",
-  "keywords": [],
+  "keywords": [
+    "web",
+    "scss",
+    "html",
+    "javascript",
+    "webpack"
+  ],
   "license": "ISC",
-  "author": "",
+  "author": "Kata Academy",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
@@ -20,7 +26,6 @@
     "not OperaMini All",
     "not dead"
   ],
-
   "devDependencies": {
     "@babel/core": "7.5.5",
     "@babel/preset-env": "7.5.5",
@@ -39,11 +44,11 @@
     "webpack-cli": "3.3.7",
     "webpack-dev-server": "^3.11.0"
   },
+  "engineStrict": true,
   "engines": {
     "node": "~14.18.3",
     "npm": "~6.14.15"
   },
-  "engineStrict": true,
   "postcss": {
     "plugins": {
       "autoprefixer": {}
