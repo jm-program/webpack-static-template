@@ -1,0 +1,153 @@
+.mobile-menu {
+  display: none;
+  font-family: 'TTLakes', sans-serif;
+  position: fixed;
+  box-shadow: 16px 0 52px 0 #0E185033,
+  -2px 0px 4px 0px #454F7E05;
+  top: 0;
+  z-index: 2;
+  padding: 16px 24px 32px;
+  background: white;
+  height: 100%;
+
+  &--show {
+    display: block;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 17px;
+  }
+  
+  &__menu-list {
+    list-style-type: none; 
+    font-weight: 500;   
+    line-height: 24px;
+    letter-spacing: -0.20000000298023224px;
+    text-align: left;
+  }
+
+  &__language-selector{
+    font-weight: 500;
+
+    .current {
+      opacity: 0.5;
+    }
+  }
+
+  li, button {
+    cursor: pointer;
+  }
+
+  .button {
+    background-color: #FFFFFF;
+    border: none; 
+  }
+
+  .link {
+    text-decoration: none;
+    color:#1B1C21;
+  }
+}
+
+.menu-list {
+  &__item {
+    margin-bottom: 12px;
+    color: rgba(27, 28, 33, 1);
+    position: relative;
+    line-height: 32px;
+    transition-duration: 0.5s;
+    transition-property: color;
+  }
+
+  &__item:hover {
+    color: rgba(27, 28, 33, 0.5);
+  }
+
+  &__item:hover::before {
+    content: "";
+    position: absolute;
+    left: -24px;    
+    width: 100%;
+    height: 100%;
+    background-image: url("/img/highlight.svg");
+    background-repeat: no-repeat;
+    background-size: 4px 32px;
+  }
+
+  &__item:first-child{
+    margin-top: 20px;
+  }
+}
+
+.contacts{
+  &__call,
+  &__chat {
+    margin-right: 16px;
+    margin-top: 32px;
+  }
+
+  &__mail{
+    margin-top: 16px;
+    line-height: 24px;
+    letter-spacing: -0.20000000298023224px;
+    text-align: left;
+    font-weight: 500;
+  }
+
+  &__number{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6000000238418579px;
+    text-align: left;
+    margin-bottom: 40px;
+    margin-top: 12px;
+  }
+}
+
+.page {
+  &__modal {
+    filter: blur(5px);
+  }
+}
+
+.header {
+  &__group{
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 768px) {
+.mobile-menu {
+  width: 100%;
+}
+}
+
+@media (min-width: 768px) {
+.mobile-menu { 
+  min-width: 320px;
+}
+
+.menu-list{
+  &__item{
+    margin-bottom: 24px;
+  }
+}
+}
+
+@media (min-width: 1366px) {
+.mobile-menu { 
+  display: block;
+  position: unset;
+  box-shadow: none;
+}
+
+.header {
+  &__menu-close{
+    display: none;
+  }
+}
+}

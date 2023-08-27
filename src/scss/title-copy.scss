@@ -1,0 +1,66 @@
+.title-copy {
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  &::before {
+      content: "";
+      position: absolute;
+      left:0;
+      top:0;
+      width: 100%;
+      height: 100%;
+      background-image: url("/img/highlight.svg");
+      background-repeat: no-repeat;
+  } 
+  
+  &__title {
+    font-weight: 700;
+    font-size: 28px;
+    width: 288px;
+    height: 40px;
+    margin-left: 16px;
+    margin-right: 16px;
+    text-align: start;
+  }
+
+  & > .hidden {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .title-copy {
+    &__title {
+      margin-left: 24px;
+    }
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .title-copy {
+    display: flex;
+    align-items: center;
+    
+    &__title {
+      margin-right:auto;
+    }
+
+    &__repair,
+    &__check-status{
+      font-weight: 500;
+      font-size: 16px;
+    }
+
+    & > .hidden{
+      display: contents;
+    } 
+
+    .button {
+      &__image {
+        margin-left: 8px;
+        margin-right: 32px;
+        line-height: 40px;
+      }
+    }
+  }
+}

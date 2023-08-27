@@ -1,0 +1,41 @@
+.page-footer {
+  padding-bottom: 19px;
+  padding-top: 16px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--grey-text);
+  border-top: 1px solid;
+  border-color: var(--border-color);
+  background-color: var(--grey-background);
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+@media screen and (min-width: 768px){
+  .page-footer {
+    flex-direction: row;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 32px;
+    &__apesong{
+      width: 33%;
+      text-align: left;
+    }
+    &__politic{
+      width: 33%;
+    }
+    &__info{
+      width: 34%;
+      text-align: right;
+    }
+  }
+}
+
+@media screen and (min-width: 1366px){
+  .page-footer {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}

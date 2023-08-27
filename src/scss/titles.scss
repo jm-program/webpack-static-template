@@ -1,0 +1,33 @@
+.titles {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.20000000298023224px;
+  text-align: left;
+  color: var(--grey-text);
+  height: 80px;
+  position: relative;
+  background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 98.61%);
+  padding-left: 16px;
+  border-top: 1px solid;
+  border-color: var(--border-color);
+
+  &__text {
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .titles {
+    padding-left: 24px;
+    max-height: 56px;
+  }
+}
+
+@media screen and (min-width: 1366px){
+  .titles {
+    padding-left: 32px;
+  }
+}

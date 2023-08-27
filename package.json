@@ -27,7 +27,7 @@
     "not dead"
   ],
   "devDependencies": {
-    "@babel/core": "7.5.5",
+    "@babel/core": "^7.22.10",
     "@babel/preset-env": "7.5.5",
     "autoprefixer": "9.6.1",
     "babel-loader": "8.0.6",
@@ -53,5 +53,8 @@
     "plugins": {
       "autoprefixer": {}
     }
+  },
+  "dependencies": {
+    "swiper": "^10.2.0"
   }
 }
