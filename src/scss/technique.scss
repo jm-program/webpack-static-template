@@ -1,0 +1,36 @@
+.technique {
+  position: relative;
+  padding-bottom: 32px;
+    
+    &__blur {
+    position: absolute;
+    background: linear-gradient(270deg, #F8F8F8 0.04%, rgba(248, 248, 248, 0.00) 100%);
+    z-index: 10;
+    height: 166px;
+    width: 24px;
+    bottom: 52px;
+    right: 0px;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .technique{
+    &__item-hidden {
+      display: none;
+     }
+  } 
+  
+  .slider{
+    &__item-technique {
+      max-height: 160px;
+     }
+  }
+}
+
+@media screen and (min-width: 1016px){
+  .slider{
+    &__item-technique-PC {
+      display: block;
+  }
+  }
+}

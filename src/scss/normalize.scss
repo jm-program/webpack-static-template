@@ -1,0 +1,44 @@
+html {
+  box-sizing: border-box;
+}
+
+*,*::after,*::before {
+box-sizing: inherit;
+padding: 0;
+margin: 0;
+border: 0;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: scroll;
+  font-family: 'TTLakes';
+}
+
+.main-page{
+  border-top: 1px solid var(--border-color);
+  background-color: var(--grey-background);
+  padding-top: 24px;
+}
+
+@media screen and (min-width: 1366px) {
+  .main-page{
+    border-top: none;
+  }
+}
+
+button:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+.info-action:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+.slider__item-technique:hover,
+.slider__item-brands:hover {
+  transform: scale(0.95);
+  cursor: pointer;
+}

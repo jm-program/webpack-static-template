@@ -1,17 +1,29 @@
-$bgColor: #24292e;
-$text: #fff;
+@import 'normalize.scss';
+@import 'header.scss';
+@import 'title-copy.scss';
+@import 'menu.scss';
+@import 'state.scss';
+@import 'brands.scss';
+@import '../../node_modules/swiper/swiper-bundle.css';
+@import 'fonts.scss';
+@import 'titles.scss';
+@import 'technique.scss';
+@import 'price.scss';
+@import 'footer.scss';
+@import 'mobile-menu.scss';
+@import 'wrapper.scss';
+@import 'modal-call.scss';
+@import 'modal-chat.scss';
 
-@font-face {
-  font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
-}
+:root {
+  --border-color: #41F6D7;
+  --grey-text: #7E7E82;
+  --light-grey: rgba(221, 221, 221, 1);
+  --deep-grey: rgba(181, 182, 188, 1);
+  --white-background: #FFFFFF;
+  --grey-background: rgba(248, 248, 248, 1);
+  --white: white;
+  --grey-border: rgba(234, 234, 234, 1);
+  --pink-text: rgba(255, 62, 121, 1);
 
-body {
-  padding: 1rem;
-  margin: 0;
-  font-family: Comic, sans-serif;
-  background-color: $bgColor;
-  color: $text;
 }
