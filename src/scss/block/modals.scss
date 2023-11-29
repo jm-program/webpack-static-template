@@ -1,0 +1,121 @@
+.feedback {
+  width: 320px;
+  margin-left: -16px;
+  flex-shrink: 0;
+  background: $colorWhite;
+  @media (min-width: $screen-sm) {
+    text-align: center;
+  }
+  @media (min-width: $screen-md) {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: auto;
+    text-align: start;
+  }
+  .feedback__burger-close {
+    margin-top: 16px;
+    @media (min-width: $screen-md) {
+      position: absolute;
+      margin-left: -65px;
+      margin-top: -5px;
+    }
+  }
+  .feedblock {
+    width: 100vw;
+    height: 130vw;
+    background-color: $colorWhite;
+    margin-left: 32px;
+    @media (min-width: $screen-md) {
+      width: 320px;
+      margin-left: 16px;
+    }
+  }
+  .feedback__header {
+    color: #1b1c21;
+    font-family: TT Lakes;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: $bold;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    margin-top: 30px;
+    &:before {
+      content: '';
+      position: absolute;
+      border-radius: 0 50% 50% 0;
+      background: $colorHighlight;
+      width: 4px;
+      height: 30px;
+      left: 0;
+    }
+  }
+
+  .feedback__box {
+    display: flex;
+    flex-direction: column;
+    padding: 1px;
+  }
+  .feedback__input {
+    list-style: none;
+    justify-content: space-around;
+  }
+
+  .feedback__input-elem {
+    flex-shrink: 0;
+    margin-top: 16px;
+    width: 288px;
+    height: 48px;
+    border-radius: 8px;
+    border: 1px solid $colorBorderElement;
+    background: $colorWhite;
+    color: #b5b6bc;
+    font-family: TT Lakes;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+  }
+
+  .feedback__confidential {
+    font-size: 14px;
+    max-width: 320px;
+    @media (min-width: $screen-sm) {
+      margin-inline: auto;
+      padding-inline: 4px;
+    }
+  }
+  .feedback_pink {
+    color: $colorPink;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+  }
+  .feedback__send-btn {
+    margin-left: 50%;
+  }
+}
+
+.feedback {
+  .callblock {
+    width: 100vw;
+    height: 130vw;
+    background-color: $colorWhite;
+    margin-left: 16px;
+    @media (min-width: $screen-md) {
+      width: 320px;
+    }
+  }
+
+  .vision-absolute {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+}

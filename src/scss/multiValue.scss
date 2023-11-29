@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $colorBody;
+  font-family: Lakes;
+  margin-left: $px16;
+  @media (min-width: $screen-md) {
+    margin-left: 30px;
+    font-size: 1em;
+  }
+  @media (min-width: $screen-xl) {
+    margin-left: 0;
+    padding: 0;
+  }
+}
+.flex-container {
+  @media (min-width: $screen-xl) {
+    display: flex;
+  }
+}
+.item_hide {
+  @media (min-width: $screen-xl) {
+    display: none;
+  }
+}
+.hidden {
+  display: none;
+}
+.opacity {
+  opacity: 0.5;
+}
+.hidden_desktop {
+  @media (min-width: $screen-md) {
+    display: none;
+  }
+}
+@media (min-width: $screen-md) {
+  .btn-expand {
+    display: block;
+  }
+}

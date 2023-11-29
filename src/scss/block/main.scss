@@ -1,0 +1,55 @@
+.main {
+  margin-top: 24px;
+  @media (min-width: $screen-md) {
+    display: flex;
+  }
+  .about-us {
+    margin-right: $px16;
+    letter-spacing: 0.2px;
+    line-height: 18px;
+    height: 90px;
+    overflow: hidden;
+    @media (min-width: $screen-md) {
+      line-height: 20px;
+      letter-spacing: 0.2px;
+      height: 160px;
+      padding-inline: 24px;
+    }
+  }
+  .about-us_hidden {
+    display: none;
+  }
+  .main__left {
+    @media (min-width: $screen-md) {
+      width: 49%;
+    }
+  }
+  .main__right {
+    margin-left: $px-16;
+    margin-block: $px16;
+    min-width: 300px;
+    @media (min-width: $screen-md) {
+      width: 45%;
+    }
+    .main-logo {
+      width: 100%;
+      @media (min-width: $screen-md) {
+        margin-inline: 24px;
+        border-radius: 3%;
+      }
+    }
+  }
+}
+
+.btn-expand {
+  border: none;
+  background-color: $colorBody;
+  height: 24px;
+  margin-top: $px16;
+}
+.text-expand {
+  margin-left: 8px;
+  vertical-align: 5px;
+  font-weight: 500;
+  font-size: 16px;
+}

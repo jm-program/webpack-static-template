@@ -1,17 +1,14 @@
-$bgColor: #24292e;
-$text: #fff;
-
-@font-face {
-  font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
-}
-
-body {
-  padding: 1rem;
-  margin: 0;
-  font-family: Comic, sans-serif;
-  background-color: $bgColor;
-  color: $text;
-}
+@import './less/fonts.scss';
+@import './less/variable.scss';
+@import './block/header.scss';
+@import 'multiValue.scss';
+@import './block/navbar.scss';
+@import './block/main.scss';
+@import 'mySwiper.scss';
+@import './block/brands.scss';
+@import './block/repair.scss';
+@import './block/price.scss';
+@import 'offer.scss';
+@import './block/footer.scss';
+@import './block/sideBarMenu.scss';
+@import './block/modals.scss';

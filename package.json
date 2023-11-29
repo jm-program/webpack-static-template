@@ -10,7 +10,6 @@
     "webpack"
   ],
   "license": "ISC",
-  "author": "Kata Academy",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
@@ -53,5 +52,8 @@
     "plugins": {
       "autoprefixer": {}
     }
+  },
+  "dependencies": {
+    "swiper": "^10.2.0"
   }
 }

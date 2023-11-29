@@ -1,0 +1,58 @@
+.footer {
+  margin-top: 40px;
+  &::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: $colorLightBlue;
+  }
+
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+    @media (min-width: $screen-md) {
+      flex-direction: row;
+    }
+
+    .create {
+      @media (min-width: $screen-md) {
+        text-align: left;
+      }
+    }
+
+    .info {
+      @media (min-width: $screen-md) {
+        text-align: right;
+      }
+    }
+
+    .footer__text {
+      margin: auto;
+      margin-top: 16px;
+      color: $colorGray;
+      list-style: none;
+      font-family: TT Lakes;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: $medium;
+      line-height: $px16;
+      @media (min-width: $screen-md) {
+        width: 30%;
+      }
+
+      .create__year {
+        @media (min-width: $screen-md) {
+          margin-top: 0;
+        }
+      }
+
+      .create__team {
+        margin-top: -15px;
+      }
+    }
+  }
+}

@@ -1,0 +1,118 @@
+.header {
+  margin-left: $px-16;
+
+  .header__menu {
+    min-height: 87px;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    @media (min-width: $screen-md) {
+      margin-left: -20px;
+    }
+    @media (min-width: $screen-xl) {
+      background-color: $colorBody;
+      position: absolute;
+      right: 5%;
+    }
+
+    .logo {
+      padding-right: 20px;
+      &:after {
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 32px;
+        border-radius: 1px;
+        background: $colorBorderElement;
+        margin-top: 12px;
+        margin-inline: 5%;
+      }
+      @media (min-width: $screen-md) {
+        padding-right: 240px;
+        padding-left: 20px;
+        &:after {
+          display: none;
+        }
+        &:before {
+          content: '';
+          position: absolute;
+          width: 2px;
+          height: 32px;
+          border-radius: 1px;
+          background: $colorBorder;
+          margin-top: 12px;
+          margin-left: -3%;
+        }
+      }
+    }
+
+    .profile {
+      padding-right: 20px;
+
+      @media (min-width: $screen-md) {
+        &:after {
+          content: '';
+          position: absolute;
+          width: 2px;
+          height: 32px;
+          border-radius: 1px;
+          background: $colorBorderElement;
+          margin-top: 5px;
+          margin-left: 3%;
+        }
+      }
+    }
+
+    .item {
+      @media (min-width: $screen-xl) {
+        margin-left: 32px;
+      }
+    }
+  }
+
+  .item_hidden {
+    display: none;
+  }
+
+  .menu__button {
+    background-color: $colorWhite;
+    border: none;
+    @media (min-width: $screen-xl) {
+      background-color: $colorBody;
+    }
+  }
+
+  .hidden-mobile {
+    display: none;
+
+    @media (min-width: $screen-md) {
+      display: block;
+      margin-left: 0;
+    }
+    @media (min-width: $screen-xl) {
+      display: none;
+    }
+  }
+  .menu__repair-logo {
+    @media (min-width: $screen-xl) {
+      &:before {
+        content: 'Оставить заявку';
+        color: #1b1c21;
+        font-weight: 500;
+        vertical-align: 15px;
+        margin-right: 10px;
+      }
+    }
+  }
+  .check-status {
+    @media (min-width: $screen-xl) {
+      &:before {
+        content: 'Статус ремонта';
+        color: #1b1c21;
+        font-weight: 500;
+        vertical-align: 15px;
+        margin-right: 10px;
+      }
+    }
+  }
+}

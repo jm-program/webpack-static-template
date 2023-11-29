@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $colorBody;
+  font-family: Lakes;
+  margin-left: $px16;
+}
+.hidden {
+  display: none;
+}
+.opacity {
+  opacity: 0.5;
+}

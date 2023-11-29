@@ -1,3 +1,6 @@
 import '../scss/style.scss'
-
-console.log('Works!')
+import './openMenu'
+import './callModal'
+import './swiper'
+import './show-hidden'
+import './feedBackModal'

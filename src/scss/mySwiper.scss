@@ -1,0 +1,17 @@
+@import '../../node_modules/swiper/swiper-bundle.css';
+.swiper {
+  @media (min-width: $screen-xl) {
+    margin-right: 40px;
+  }
+}
+.swiper-pagination-bullet-active {
+  background-color: #989899;
+}
+.swiper-pagination {
+  position: relative;
+  margin-top: 5px;
+  background-color: $colorBody;
+  @media (min-width: 768px) {
+    display: none;
+  }
+}

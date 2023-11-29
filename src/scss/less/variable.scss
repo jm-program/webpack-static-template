@@ -1,0 +1,32 @@
+$px16: 16px;
+$px-16: -16px;
+$bold: 700;
+$medium: 500;
+$regular: 400;
+$colorWhite: #fff;
+$colorGray: #7e7e82;
+$colorLightBlue: #d9fff5;
+$colorBorder: #d9fff5;
+$colorBorderElement: #eaeaea;
+$colorPink: #ff3e79;
+$colorBody: #f8f8f8;
+$colorHighlight: #41f6d7;
+
+$screen-sm: 380px;
+$screen-md: 768px;
+$screen-xl: 1366px;
+
+%headers-gray {
+  display: inline-block;
+  color: $colorGray;
+  font-family: TT Lakes;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: $regular;
+  line-height: 24px; /* 150% */
+  text-transform: uppercase;
+  width: 100%;
+  background: linear-gradient(90deg, $colorBody 0%, $colorWhite 98.61%);
+  padding: 20px;
+  margin: 0;
+}
