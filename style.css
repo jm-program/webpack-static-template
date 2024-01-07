@@ -982,8 +982,8 @@ template {
   border-top: 1px solid #d9fff5; }
   @media screen and (min-width: 767px) {
     .brands {
-      margin-top: 34px;
-      padding: 10px 0 14px 0; } }
+      margin-top: 44px;
+      padding: 0px 0 14px 0; } }
   @media screen and (min-width: 1120px) {
     .brands {
       margin-top: 44px;
