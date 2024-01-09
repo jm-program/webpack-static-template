@@ -864,11 +864,16 @@ template {
     @media screen and (min-width: 1120px) {
       .main-navigation__button {
         padding: 10px 13px 6px 26px; } }
+    @media screen and (min-width: 1366px) {
+      .main-navigation__button {
+        font-weight: 500; } }
     .main-navigation__button:hover {
       opacity: 0.8; }
     .main-navigation__button_active {
+      font-weight: normal;
       border: 2px solid #b8ffec;
-      border-radius: 5px; }
+      border-radius: 5px;
+      background-color: #ffffff; }
 
 .about-us {
   color: #1b1c21;
@@ -1077,6 +1082,12 @@ template {
   @media screen and (min-width: 767px) {
     .brands__read-more-icon_reverse {
       transform: rotate(180deg); } }
+  .brands__read-more-text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.20000000298023224px;
+    text-align: left; }
   @media screen and (min-width: 767px) {
     .brands__link {
       text-decoration: none;
@@ -1304,6 +1315,12 @@ template {
       .technics__read-more {
         margin-left: 30px;
         margin-top: 8px; } }
+  .technics__read-more-text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.20000000298023224px;
+    text-align: left; }
   @media screen and (min-width: 767px) {
     .technics__list-element {
       background-color: #ffffff;
@@ -1336,7 +1353,11 @@ template {
     .technics__item-next {
       padding: 0; } }
   .technics__item-title {
-    align-self: start; }
+    align-self: start;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.20000000298023224px;
+    text-align: left; }
   @media screen and (min-width: 767px) {
     .technics__read-more-icon {
       margin: 0;
@@ -1408,7 +1429,6 @@ template {
       width: 272px; } }
   @media screen and (min-width: 1366px) {
     .side-menu {
-      position: relative;
       display: block;
       position: static;
       box-shadow: none; } }
