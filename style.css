@@ -1538,10 +1538,17 @@ template {
     letter-spacing: -0.20000000298023224px;
     text-align: left;
     margin: 12px 0;
-    padding: 0; }
+    padding: 0;
+    display: block;
+    width: -moz-fit-content;
+    width: fit-content;
+    text-decoration: none;
+    transition: 0.2; }
     @media screen and (min-width: 1326px) {
       .side-menu__email {
         margin: 14px 0; } }
+    .side-menu__email:hover {
+      opacity: 0.7; }
   .side-menu__number {
     color: #1b1c21;
     font-size: 24px;
@@ -1553,10 +1560,14 @@ template {
     text-decoration: none;
     display: inline-block;
     width: -moz-fit-content;
-    width: fit-content; }
+    width: fit-content;
+    transition: 0.2;
+    font-weight: bold; }
     @media screen and (min-width: 767px) {
       .side-menu__number {
         margin: 0 0 40px; } }
+    .side-menu__number:hover {
+      opacity: 0.7; }
   .side-menu__language-container {
     margin: 0;
     padding: 0 0 32px;
