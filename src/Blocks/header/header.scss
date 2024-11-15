@@ -1,0 +1,148 @@
+.header {
+  display: flex;
+}
+.header__container {
+  background-color: var(--main-color);
+  position: absolute;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 88px;
+  border-bottom: 1px solid #d9fff5;
+}
+
+.header__wrapper-left {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.header__wrapper-right {
+  display: flex;
+  align-items: center;
+}
+
+.header__button {
+  display: flex;
+  background-color: var(--main-color);
+  border: none;
+  padding-right: 1rem;
+}
+.header__burger-menu {
+  padding-left: 1rem;
+}
+
+.header__decoration {
+  width: 2px;
+  height: 32px;
+  border-radius: 1px;
+  background: #eaeaea;
+  margin: 0 17px;
+}
+
+.header__button-text {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  color: #1b1c21;
+  margin-right: 10px;
+}
+
+@media (max-width: 767px) {
+  .header__decoration-wrapper {
+    display: none;
+  }
+  .header__button-icon {
+    display: none;
+  }
+
+  .header__button-chat {
+    display: none;
+  }
+
+  .header__button-call {
+    display: none;
+  }
+
+  .header__button-text {
+    display: none;
+  }
+  .header__decoration-right {
+    display: none;
+  }
+  .logo {
+    margin-right: 17px;
+  }
+  .header__container {
+    position: relative;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1366px) {
+  .logo {
+    margin-left: 21px;
+  }
+  .header__decoration-left {
+    margin: 0;
+  }
+  .header__button-text {
+    display: none;
+  }
+  .header__decoration-left {
+    margin-right: 10px;
+  }
+  .header__container {
+    position: relative;
+    max-width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1366px) {
+  .header__button-icon {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .header__decoration {
+    display: none;
+  }
+
+  .header__burger-menu {
+    display: none;
+  }
+
+  .header__button-container {
+    display: flex;
+    align-items: center;
+  }
+  .header__container {
+    background-color: var(--main-second);
+  }
+  .header__button {
+    background-color: var(--main-second);
+  }
+
+  .header__container {
+    display: flex;
+    width: 1089px;
+    flex-direction: column;
+  }
+
+  .header__inner {
+    margin-top: 36px;
+    margin-right: 31px;
+  }
+
+  .header__wrapper-left {
+    padding-right: 31px;
+  }
+}

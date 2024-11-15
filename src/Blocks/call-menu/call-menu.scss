@@ -1,0 +1,118 @@
+.call-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+.call-menu__container {
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2),
+    -2px 0 4px 0 rgba(69, 79, 126, 0.02);
+  height: 100vw;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.call-menu__form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.call-menu__title {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 133%;
+  letter-spacing: -0.03em;
+  color: #1b1c21;
+  padding-bottom: 16px;
+}
+
+.call-menu__input {
+  display: flex;
+  width: 100%;
+  max-width: 376px;
+  height: 48px;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  padding: 10px;
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  color: #b5b6bc;
+}
+
+.call-menu__warning {
+  font-family: var(--main-font);
+  color: #ff3e79;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 114%;
+}
+
+.call-menu__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: #ff3e79;
+  border-radius: 16px;
+  width: 136px;
+  height: 32px;
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 200%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  text-align: right;
+  color: var(--main-color);
+  padding: 10px;
+  align-self: flex-end;
+  &::after {
+    content: '';
+    height: 40px;
+    width: 4px;
+    position: absolute;
+    border-radius: 2px;
+    background-color: #41f6d7;
+    top: 95px;
+    left: 0;
+  }
+}
+
+.call-menu__description {
+  max-width: 376px;
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 114%;
+  color: #7e7e82;
+  padding: 16px 0;
+}
+
+.call-menu__img {
+  max-height: 24px;
+}
+
+.call-close {
+  display: flex;
+  padding-bottom: 25px;
+}
+
+@media (min-width: 320px) {
+  .call-menu__container {
+    max-width: 320px;
+  }
+}
+@media (min-width: 768px) {
+  .call-menu__container {
+    max-width: 440px;
+  }
+}

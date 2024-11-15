@@ -1,0 +1,120 @@
+.repair-menu__container {
+  width: 100%;
+}
+.repair-menu {
+  background-color: var(--main-second);
+}
+
+.repair-menu__header {
+  border-top: 1px solid #d9fff5;
+  background-color: var(--main-color);
+}
+
+.repair-menu__title {
+  display: flex;
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #7e7e82;
+  padding: 1rem;
+}
+
+.repair-item__inner {
+  display: flex;
+  background-color: var(--main-color);
+  padding: 1rem;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  flex-direction: column;
+  width: 190px;
+  height: 130px;
+}
+
+.repair-item__button {
+  background-color: var(--main-color);
+  display: flex;
+  margin-top: auto;
+  align-self: flex-end;
+}
+
+.repair__wrapper {
+  padding: 1rem;
+}
+
+.repair-item__img {
+  max-height: 44px;
+}
+
+.repair-button {
+  display: none;
+}
+
+.repair-item__text {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  color: #1b1c21;
+  height: 25px;
+}
+
+.repair-slide {
+  height: 160px;
+}
+
+.repair-item__button-img {
+  max-height: 50px;
+}
+
+.repair-button__img--open {
+  transform: rotate(180deg);
+}
+
+@media (min-width: 768px) {
+  .repair__wrapper {
+    flex-wrap: wrap;
+    gap: 1rem;
+    overflow: hidden;
+    height: 160px;
+  }
+
+  .repair__wrapper--close {
+    transition: height 0.5s ease;
+  }
+
+  .repair__wrapper--open {
+    height: 500px;
+    transition: height 0.5s ease;
+  }
+
+  .repair-button {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    border: none;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    background-color: var(--main-second);
+  }
+
+  .repair-menu {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .repair-menu {
+    width: 1120px;
+  }
+  .repair__wrapper--open {
+    height: 330px;
+    transition: height 0.5s ease;
+  }
+  .repair-button {
+    background-color: var(--main-second);
+  }
+}

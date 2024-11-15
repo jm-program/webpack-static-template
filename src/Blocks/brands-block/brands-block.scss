@@ -1,0 +1,137 @@
+.brands-menu__container {
+  width: 100%;
+}
+.brands-menu {
+  background-color: var(--main-second);
+}
+
+.brands-menu__header {
+  border-top: 1px solid #d9fff5;
+  margin-top: 1.19rem;
+  margin-bottom: 1rem;
+  background-color: var(--main-color);
+}
+
+.brands-menu__title {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #7e7e82;
+  margin: 0;
+  padding: 1rem;
+}
+
+.brand-item__inner {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--main-color);
+  padding: 1rem;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+}
+.brand-button {
+  background-color: var(--main-color);
+}
+.mySwiper__wrapper {
+  padding: 1rem;
+}
+
+.swiper-slide {
+  padding-bottom: 1rem;
+  width: auto;
+}
+.brand-item {
+  width: 228px;
+}
+.brand-item__img {
+  max-height: 44px;
+}
+
+.brand-button {
+  display: none;
+}
+.brand-button__text {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  color: #1b1c21;
+}
+
+.brand-button__img--open {
+  transform: rotate(180deg);
+}
+
+@media (min-width: 768px) {
+  .brand-item {
+    height: 77px;
+    width: 226px;
+  }
+
+  .mySwiper__wrapper {
+    flex-wrap: wrap;
+    gap: 1rem;
+    overflow: hidden;
+    height: 164px;
+  }
+  .mySwiper__wrapper--close {
+    height: 164px;
+    transition: height 0.5s ease;
+  }
+  .mySwiper__wrapper--open {
+    height: 344px;
+    transition: height 0.5s ease;
+  }
+
+  .swiper-slide {
+    display: flex;
+    padding-bottom: 0;
+    width: auto;
+    flex-wrap: wrap;
+  }
+  .brand-slide {
+    height: 77px;
+  }
+  .swiper-container {
+    display: flex;
+    width: 768px;
+  }
+
+  .brand-button {
+    display: flex;
+    align-items: center;
+    border: none;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    background-color: var(--main-second);
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+
+  .brands-menu {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .swiper-container {
+    display: flex;
+    width: 1120px;
+  }
+  .brands-menu {
+    width: 1120px;
+  }
+  .mySwiper__wrapper--open {
+    height: 260px;
+    transition: height 0.5s ease;
+  }
+  .brand-button {
+    background-color: var(--main-second);
+  }
+}

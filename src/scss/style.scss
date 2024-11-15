@@ -1,17 +1,74 @@
-$bgColor: #24292e;
-$text: #fff;
+html {
+  box-sizing: border-box;
+}
 
-@font-face {
-  font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 body {
-  padding: 1rem;
   margin: 0;
-  font-family: Comic, sans-serif;
-  background-color: $bgColor;
-  color: $text;
+  padding: 0;
+  background-color: var(--main-color);
+  width: 100%;
 }
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  background-color: var(--main-color);
+  padding: 0;
+  cursor: pointer;
+
+  &:hover {
+    transition: 0.4s;
+    opacity: 50%;
+  }
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+}
+
+@media (min-width: 1366px) {
+  .body {
+    display: flex;
+    position: relative;
+  }
+  .body-content {
+    position: static;
+    max-width: 1426px;
+    margin: 0 auto;
+  }
+}
+h1 {
+  margin: 0;
+}
+
+@import '../Blocks/header/header.scss';
+@import '../Blocks/main/main.scss';
+@import '../Blocks/brands-block/brands-block.scss';
+@import '../Blocks/price-block/price-block.scss';
+@import '../Blocks/repair-block/repair-block.scss';
+@import '../Blocks/footer/footer.scss';
+@import '../Blocks/burger-menu/burger-menu.scss';
+@import '../Blocks/feedback-menu/feedback-menu.scss';
+@import '../Blocks/call-menu/call-menu.scss';
+@import '../fonts/fonts.scss';
+@import '../Blocks/global/normalize.scss';
+@import '../Blocks/global/variables.scss';
